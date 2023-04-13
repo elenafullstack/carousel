@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@500&display=swap');
+
+body {
+    font-family: 'Cairo', sans-serif;
+    background-color: rgb(39, 28, 24);
+    overflow: hidden;
+}
+
+h1 {
+    margin-top: 3.5rem;
+    color: white;
+    text-align: center;
+    margin-bottom: 4%;
+}
+.carousel {
+    width:800px;
+    position: relative;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    height:550px;
+}
+
+img {
+    width:100%;
+    position: absolute;
+    height:450px;
+    transition: all 0.5s ease;
+}
+
+
+.mainImg {
+    transform: translate(0px);
+    filter: blur(0px) contrast(130%);
+    z-index: 3;
+}
+
+.beforeImg {
+    transform: scale(75%) translateX(-60%);
+    filter: blur(0px) contrast(130%);
+    z-index: 2;
+}
+
+.afterImg {
+    transform: scale(75%) translateX(60%);
+    filter: blur(0px) contrast(130%);
+    z-index: 2;
+}
+
+.hideImg {
+    transform: scale(50%);
+    filter: blur(0px) contrast(130%);
+    z-index: 1;
+}
+
+
+.container2 {
+    display: flex;
+    justify-content: center;
+}
+div {
+    width:30%;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+button {
+    width:34%;
+    border:none;
+    border-radius: 4px;
+    padding:10px;
+    background-color: rgb(255, 255, 255);
+    color:rgb(180, 76, 16);
+
+}
+
